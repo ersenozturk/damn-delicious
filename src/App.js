@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import AppRouter from "./router/AppRouter";
+import theme from "./components/globalStyles/theme";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./components/globalStyles/Global.styled";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles/>
+      <AppRouter/>
+    </ThemeProvider>
   );
 }
 
 export default App;
+// https://api.edamam.com/search?q=egg&app_id=7e946d4c&app_key=96c514d9a90983230952517c6794ed10&mealType=dinner
