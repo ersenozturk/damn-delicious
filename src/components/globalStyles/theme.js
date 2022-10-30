@@ -4,6 +4,7 @@ const theme = {
         colorGray: '#222831',
         colorSun: '#FFDE7D',
         colorLight: '#EEEEEE',
+        colorLive:'#F96666',
     },
     screens: {
         xl: '1200px',
