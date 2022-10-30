@@ -1,9 +1,21 @@
-import React from 'react'
+import React from "react";
+import { SiteFooter, Social } from "./Footer.styled";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <SiteFooter>
+            <Social>
+        <a target='_blank' href='https://www.linkedin.com/in/ozturkersen/'><FaLinkedin size={20} /></a>
+        <a href="https://github.com/ersenozturk" target='_blank'><FaGithub size={20} /></a>
+      </Social>
+      <div>
+        This application was created by <b> Ersen OZTURK</b>
+      </div>
 
-export default Footer
+      <div>©{new Date().getFullYear()} DAMN DELICIOUS.</div>
+    </SiteFooter>
+  );
+};
+
+export default Footer;

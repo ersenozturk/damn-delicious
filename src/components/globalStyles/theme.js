@@ -1,13 +1,15 @@
 const theme = {
-    color:{
+    colors:{
         colorNight: '#222831',
         colorGray: '#222831',
-        colorOcean: '#00ADB5',
+        colorSun: '#FFDE7D',
         colorLight: '#EEEEEE',
-
     },
-    screens:{
-
-    }
+    screens: {
+        xl: '1200px',
+        lg: '992px',
+        md: '768px',
+        sm: '576px',
+      },
 }
 export default theme;
