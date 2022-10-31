@@ -2,7 +2,8 @@ import React from 'react'
 import { Navigate, Outlet } from 'react-router-dom'
 
 const PrivateRouter = () => {
-  const user = true
+  const user = JSON.parse(sessionStorage.getItem('user'));
+
   return (
     <React.Fragment>
     {
