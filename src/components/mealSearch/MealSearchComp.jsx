@@ -1,17 +1,22 @@
 import {
   WrapperLeft,
-  MealForm,
+  Form,
   Select,
   Input,
   Button,
 } from "./MealSearchComp.styled";
 
-const MealSearchComp = ({ mealTypeArr, setMeal, setMealType,mealType }) => {
-  console.log(mealType)
+const MealSearchComp = ({ mealTypeArr, setQuery, setMealType, getData }) => {
+  const handleFromSubmit = (e) => {
+    e.preventDefault();
+    getData()
+  };
+
   return (
     <WrapperLeft>
       <h2>FIND THE PERFECT RECIPE:</h2>
-      <MealForm>
+      <Form onSubmit={handleFromSubmit}>
+      <Input  placeholder="Search Damn Delicious" onChange={(e) => setQuery(e.target.value)} />
         <Select
           name="mealTypeArr"
           id="mealTypeArr"
@@ -25,9 +30,9 @@ const MealSearchComp = ({ mealTypeArr, setMeal, setMealType,mealType }) => {
             );
           })}
         </Select>
-        <Input onChange={(e) => setMeal(e.target.value)} />
-        <Button>Search</Button>
-      </MealForm>
+        
+        <Button type="submit">Search</Button>
+      </Form>
     </WrapperLeft>
   );
 };

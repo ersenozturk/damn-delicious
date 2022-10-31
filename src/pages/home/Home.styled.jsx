@@ -9,7 +9,6 @@ export const Wrapper = styled(Flex)`
   h2 {
     color: ${({ theme }) => theme.colors.colorLight};
     text-align: center;
-    /* padding-top: 2rem; */
   }
 `;
 
@@ -25,7 +24,6 @@ export const PurposeLi = styled(Link)`
   display: inline-block;
   padding: 1rem 2rem;
   border: 1px solid;
-  /* margin: 1rem; */
   border-radius: 5px;
   width: 10rem;
   text-align: center;
@@ -38,12 +36,13 @@ export const PurposeLi = styled(Link)`
 
 
 export const WrapperRight = styled(Flex)`
-  justify-content: space-center;
+  justify-content: center;
+  align-items:stretch;
+  /* width: 100px; */
   flex-direction: column;
   flex: 1;
-  padding:1rem;
+  padding:0 1rem;
   height:100%;
-  /* width: 50%; */
   gap:2rem;
 `;
 

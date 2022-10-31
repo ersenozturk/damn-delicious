@@ -1,9 +1,23 @@
-import React from 'react'
-
-const Cards = () => {
+import { useNavigate } from "react-router-dom";
+import { GridCard, Card ,ImgDiv} from "./Cards.styled";
+const Cards = ({ recipes }) => {
+  console.log(recipes);
+  const navigate = useNavigate()
   return (
-    <div>Cards</div>
-  )
-}
+    <GridCard>
+      {recipes?.map((eachRecipe, i) => {
+        return (
+          <Card key={i} onClick={()=>navigate('./detail',{state: eachRecipe})}>
+            <ImgDiv>
+            <img src={eachRecipe.recipe.image} alt="" />
+            </ImgDiv>
+            <p>{eachRecipe.recipe.source}</p>
+            <button>View Detail</button>
+          </Card>
+        );
+      })}
+    </GridCard>
+  );
+};
 
-export default Cards
+export default Cards;
