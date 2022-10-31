@@ -43,13 +43,14 @@ const Home = () => {
       <WrapperRight>
         {!recipes && (
           <>
-            <h2>The main purpose of 'Damn Delicious' is;</h2>
+            <h2>Main technologies used in this project;</h2>
             <PurposeUL>
-              <PurposeLi to="/detail">QUICK</PurposeLi>
-              <PurposeLi to="/detail">EASY</PurposeLi>
-              <PurposeLi to="/detail">DELICIOUS</PurposeLi>
-              <PurposeLi to="/detail">TRADITIONAL</PurposeLi>
-              <PurposeLi to="/detail">HOUSEHOLD</PurposeLi>
+              <PurposeLi to="/about">React</PurposeLi>
+              <PurposeLi to="/about">Styled-Components</PurposeLi>
+              <PurposeLi to="/about">Data Fetching</PurposeLi>
+              <PurposeLi to="/about">React-Router-Dom</PurposeLi>
+              <PurposeLi to="/about">HTML-CSS-Javascript</PurposeLi>
+              
             </PurposeUL>
           </>
         )}

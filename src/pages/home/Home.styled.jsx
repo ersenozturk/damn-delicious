@@ -25,7 +25,7 @@ export const PurposeLi = styled(Link)`
   padding: 1rem 2rem;
   border: 1px solid;
   border-radius: 5px;
-  width: 10rem;
+  width: 100%;
   text-align: center;
   &:hover {
     color: ${({ theme }) => theme.colors.colorNight};
