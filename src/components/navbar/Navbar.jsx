@@ -1,12 +1,9 @@
 import React from "react";
 import { Nav, Logo, NavItem } from "./Navbar.styled";
 import logoImg from "../../assets/logo.png";
-import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const navigate = useNavigate()
   const handleLogout = () =>{
-    // navigate('login')
     sessionStorage.clear()
   }
   return (

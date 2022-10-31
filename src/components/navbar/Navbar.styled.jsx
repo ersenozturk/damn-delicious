@@ -8,7 +8,7 @@ export const Nav = styled(Flex)`
   color: ${({ theme }) => theme.colors.colorNight};
   padding: 1rem 2rem;
   justify-content: space-between;
-height:15vh;
+/* height:15vh; */
 
   ul {
     display: flex;

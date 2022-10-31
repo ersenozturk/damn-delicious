@@ -4,11 +4,14 @@ import { Link } from "react-router-dom";
 
 export const Wrapper = styled(Flex)`
   background-color: ${({ theme }) => theme.colors.colorNight};
-  height: 75vh;
+  /* height: 75vh; */
   padding:2rem;
   h2 {
     color: ${({ theme }) => theme.colors.colorLight};
     text-align: center;
+  }
+  @media (max-width: ${({ theme }) => theme.screens.md}) {
+    flex-direction:column;
   }
 `;
 
@@ -44,5 +47,10 @@ export const WrapperRight = styled(Flex)`
   padding:0 1rem;
   height:100%;
   gap:2rem;
+  @media (max-width: ${({ theme }) => theme.screens.md}) {
+    margin-top:2rem;
+    gap:1rem;
+
+  }
 `;
 

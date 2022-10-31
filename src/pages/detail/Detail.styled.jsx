@@ -4,11 +4,11 @@ import { Flex } from "../../components/globalStyles/MyTags";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 75vh;
+  /* height: 75vh; */
   justify-content: space-between;
 `;
 export const Info = styled(Flex)`
-  height: 20vh;
+  /* height: 20vh; */
   justify-content: space-evenly;
   margin: 1rem 2rem;
   gap: 1rem;
@@ -35,7 +35,7 @@ export const DivImg = styled(Flex)`
   }
 `;
 export const DivExtra = styled(Flex)`
-  height: 55vh;
+  /* height: 55vh; */
   justify-content: space-around;
   background-color: ${({ theme }) => theme.colors.colorNight};
   ul {

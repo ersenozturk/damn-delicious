@@ -2,17 +2,18 @@ import styled from "styled-components";
 import { Flex } from "../globalStyles/MyTags";
 
 export const WrapperLeft = styled(Flex)`
-  justify-content: center;
   flex-direction: column;
   flex: 1;
   padding:1rem;
   gap:2rem;
 
-  /* width: 50%; */
-  height:100%;
+  width: 100%;
+  height:60vh;
   background-color: ${({ theme }) => theme.colors.colorLive}; 
   border-radius:15px;
-
+  @media (max-width: ${({ theme }) => theme.screens.md}) {
+    height:auto;
+  }
 `;
 
 export const Form = styled.form`

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Main = styled.div`
-  height: 75vh;
+  /* height: 75vh; */
   width: 100%;
   margin: auto;
   color: orange;
@@ -18,7 +18,7 @@ export const Main = styled.div`
 `;
 export const Img = styled.img`
   width: 50%;
-  height: 30vh;
+  /* height: 30vh; */
 `;
 
 export const A = styled.a`

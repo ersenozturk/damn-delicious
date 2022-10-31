@@ -6,8 +6,9 @@ export const GlobalStyles = createGlobalStyle`
     margin:0;
     padding:0;
     font-family: 'Quicksand', sans-serif;
-    color: ${({theme})=> theme.colors.colorGray}
+    color: ${({ theme }) => theme.colors.colorGray}
 }
+
 body{
     background-color: ${({ theme }) => theme.colors.colorLight};
 }
