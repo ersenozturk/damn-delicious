@@ -2,9 +2,14 @@ import styled from "styled-components";
 import { Flex } from "../../components/globalStyles/MyTags";
 
 export const Container = styled.div`
+  height: 80vh;
+  position: absolute;
+  top: 12vh;
+  left: 0;
+  right: 0;
+
   display: flex;
   flex-direction: column;
-  /* height: 75vh; */
   justify-content: space-between;
 `;
 export const Info = styled(Flex)`
@@ -35,7 +40,7 @@ export const DivImg = styled(Flex)`
   }
 `;
 export const DivExtra = styled(Flex)`
-  /* height: 55vh; */
+  height: 55vh;
   justify-content: space-around;
   background-color: ${({ theme }) => theme.colors.colorNight};
   ul {
@@ -43,10 +48,16 @@ export const DivExtra = styled(Flex)`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    
     li,
-    span {
+    span ,p{
       color: ${({ theme }) => theme.colors.colorLight};
     }
+  }
+  @media (max-width: ${({ theme }) => theme.screens.md}) {
+    flex-direction: column;
+    align-items:flex-start;
+    padding:1rem 3rem;
   }
 `;
 
@@ -54,7 +65,7 @@ export const DivExtra2 = styled(Flex)`
   height: 100%;
   flex-direction: column;
   justify-content: space-around;
-  align-items:start;
+  align-items: start;
   h4 {
     color: ${({ theme }) => theme.colors.colorLight};
     text-align: center;

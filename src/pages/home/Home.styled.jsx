@@ -50,13 +50,13 @@ export const WrapperRight = styled(Flex)`
   justify-content: center;
   align-items:stretch;
   /* width: 100px; */
+  /* height:100%; */
   flex-direction: column;
   flex: 1;
   padding:0 1rem;
-  height:100%;
   gap:2rem;
   @media (max-width: ${({ theme }) => theme.screens.md}) {
-    margin-top:2rem;
+    margin-top:1rem;
     gap:1rem;
     width:100%;
   }

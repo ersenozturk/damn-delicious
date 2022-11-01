@@ -6,10 +6,11 @@ import {
   Button,
 } from "./MealSearchComp.styled";
 
-const MealSearchComp = ({ mealTypeArr, setQuery, setMealType, getData }) => {
+const MealSearchComp = ({ mealTypeArr, setQuery, setMealType, getData,mealType }) => {
   const handleFromSubmit = (e) => {
     e.preventDefault();
     getData()
+    console.log(mealType)
   };
 
   return (

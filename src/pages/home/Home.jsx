@@ -38,6 +38,7 @@ const Home = () => {
         setQuery={setQuery}
         setMealType={setMealType}
         getData={getData}
+        mealType={mealType}
       />
 
       <WrapperRight>

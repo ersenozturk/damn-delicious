@@ -66,7 +66,7 @@ const Detail = () => {
           ))}
         </DivExtra2>
         <ul>
-          <span> ingredientLines:</span>
+          <p> INGREDIENTLINES</p>
           {ingredientLines?.map((ingredientLine, i) => (
             <li key={i}>
               <span>{i + 1}</span> -{ingredientLine}
