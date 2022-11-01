@@ -21,6 +21,9 @@ export const Form = styled.form`
   h1 {
     text-align: center;
   }
+  @media (max-width: ${({ theme }) => theme.screens.md}) {
+    width:90%;
+  }
 `;
 export const Input = styled.input`
   width: 100%;
@@ -29,6 +32,9 @@ export const Input = styled.input`
   border: none;
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  @media (max-width: ${({ theme }) => theme.screens.md}) {
+    text-align:center;
+  }
 `;
 export const Button = styled.button`
   width: 100%;
