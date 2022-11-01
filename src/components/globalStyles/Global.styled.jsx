@@ -25,4 +25,3 @@ li{
 }
 `;
 
-/* font-family: 'Teko', sans-serif; */

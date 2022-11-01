@@ -13,4 +13,3 @@ function App() {
 }
 
 export default App;
-// https://api.edamam.com/search?q=egg&app_id=7e946d4c&app_key=96c514d9a90983230952517c6794ed10&mealType=dinner

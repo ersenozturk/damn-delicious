@@ -1,5 +1,5 @@
 import React from "react";
-import { SiteFooter, Social } from "./Footer.styled";
+import { SiteFooter, Social, DateDiv } from "./Footer.styled";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
@@ -13,7 +13,7 @@ const Footer = () => {
         This application was created by <b> Ersen OZTURK</b>
       </div>
 
-      <div>©{new Date().getFullYear()} DAMN DELICIOUS.</div>
+      <DateDiv>©{new Date().getFullYear()} DAMN DELICIOUS.</DateDiv>
     </SiteFooter>
   );
 };

@@ -22,3 +22,8 @@ export const Social = styled(Flex)`
         
     }
 `;
+export const DateDiv = styled(Flex)`
+    @media (max-width:${({theme})=>theme.screens.sm}){
+        display:none;
+    }
+`;

@@ -7,12 +7,13 @@ import Cards from "../../components/cards/Cards";
 const Home = () => {
   const app_id = "7e946d4c";
   const app_key = "96c514d9a90983230952517c6794ed10";
-
   const mealTypeArr = ["Breakfast", "Lunch", "Dinner", "Snack", "Teatime"];
-  const [mealType, setMealType] = useState(mealTypeArr[0]);
-
+  
   const [query, setQuery] = useState("");
   const [recipes, setRecipes] = useState(null);
+  const [mealType, setMealType] = useState(mealTypeArr[0]);
+
+
 
   const baseUrl = `https://api.edamam.com/search?q=${query}&app_id=${app_id}&app_key=${app_key}&mealType=${mealType}`;
 
@@ -22,7 +23,6 @@ const Home = () => {
         const req = await fetch(baseUrl);
         const res = await req.json();
         setRecipes(res.hits);
-        console.log(recipes);
       } catch (error) {
         alert(error);
       }
@@ -32,13 +32,13 @@ const Home = () => {
   };
 
   return (
+    
     <Wrapper>
       <MealSearchComp
         mealTypeArr={mealTypeArr}
         setQuery={setQuery}
         setMealType={setMealType}
         getData={getData}
-        mealType={mealType}
       />
 
       <WrapperRight>
@@ -51,14 +51,13 @@ const Home = () => {
               <PurposeLi to="/about">Data Fetching</PurposeLi>
               <PurposeLi to="/about">React-Router-Dom</PurposeLi>
               <PurposeLi to="/about">HTML-CSS-Javascript</PurposeLi>
-              
             </PurposeUL>
           </>
         )}
 
         {recipes?.length === 0 && (
           <Oops >
-            <h2 style={{marginBottom:'1rem'}}>OOOOPS! The recipe you requested was not found.</h2>
+            <h2>OOOOPS! The recipe you requested was not found.</h2>
             <img  src={chiefCoice} alt="" />
           </Oops>
         )}
