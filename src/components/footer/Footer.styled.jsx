@@ -3,12 +3,13 @@ import {Flex} from '../globalStyles/MyTags'
 
 export const SiteFooter = styled(Flex)`
 justify-content:space-evenly;
-/* position:absolute;
+position:fixed;
 bottom:0;
-left:0; */
+left:0;
+right:0;
 padding:1rem;
 width:100%;
-/* height:10vh; */
+height:8vh;
 background-color:${({theme})=>theme.colors.colorSun};
 `;
 

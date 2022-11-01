@@ -11,6 +11,8 @@ export const GlobalStyles = createGlobalStyle`
 
 body{
     background-color: ${({ theme }) => theme.colors.colorLight};
+    height:100vh;
+    
 }
 ul{
   list-style:none;  

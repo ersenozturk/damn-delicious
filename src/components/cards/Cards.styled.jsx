@@ -8,6 +8,10 @@ export const GridCard = styled.div`
   color: ${({ theme }) => theme.colors.colorSun};
   height: 100%;
   gap: 0.4rem;
+  @media (max-width: 455px) {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
 `;
 
 export const Card = styled(Flex)`

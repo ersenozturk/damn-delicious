@@ -1,29 +1,29 @@
 import React from "react";
-import { Nav, Logo, NavItem } from "./Navbar.styled";
+import { Nav, Logo, MenuLink, Menu } from "./Navbar.styled";
 import logoImg from "../../assets/logo.png";
+// import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
 
 const Navbar = () => {
-  const handleLogout = () =>{
-    sessionStorage.clear()
-  }
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <Nav>
+    <Nav j="space-between" wrap="wrap">
       <Logo to="/">
-        <img src={logoImg} alt="" />
+        <img src={logoImg} alt="damn delicious" />
       </Logo>
-      <ul>
-        <NavItem to="about">About</NavItem>
-        <NavItem
-          target="_blank"
-          onClick={() => {
-            return (window.location.href =
-              "https://github.com/ersenozturk/elegant-dishes");
-          }}
-        >
-          Source_Code
-        </NavItem>
-        <NavItem to='/login' onClick={handleLogout}>Logout</NavItem>
-      </ul>
+
+      {/* <Hamburger onClick={() => setIsOpen(!isOpen)}>
+        <GiHamburgerMenu />
+      </Hamburger> */}
+
+      <Menu isOpen={isOpen} onClick={() => setIsOpen(false)}>
+        <MenuLink to="/">Home</MenuLink>
+        <MenuLink to="about">About</MenuLink>
+        <MenuLink to="login" onClick={() => sessionStorage.clear()}>
+          Logout
+        </MenuLink>
+      </Menu>
     </Nav>
   );
 };

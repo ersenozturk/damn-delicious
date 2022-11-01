@@ -4,10 +4,7 @@ import coding from "../../assets/coding.svg";
 const About = () => {
   return (
     <Main>
-      <h4 style={{ marginTop: "1rem" }}>
-        I am a FrontEnd Developer who can easily adapt to new technologies and
-        constantly improves himself.
-      </h4>
+
       <Img src={coding} alt="codingSvg" />
       <h1 style={{ margin: "1rem auto" }}>
         Hi, &#128075; I'm Ersen
@@ -26,7 +23,6 @@ const About = () => {
         <li>✅ SQL</li>
         <li>✅ Git </li>
         <li> ✅ Jira</li>
-        <li>✅ SDLC</li>
         <li>✅ Django</li>
         <li>✅ PostgreSQL</li>
         <li>✅ Figma</li>

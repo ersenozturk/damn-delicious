@@ -2,7 +2,11 @@ import styled from "styled-components";
 import { Flex } from "../../components/globalStyles/MyTags";
 
 export const Container = styled(Flex)`
-  /* height: 75vh; */
+  height: 80vh;
+  position: absolute;
+  top: 12vh;
+  left:0;
+  right:0;
 
   background-color: ${({ theme }) => theme.colors.colorGray};
 `;

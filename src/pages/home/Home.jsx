@@ -1,6 +1,6 @@
 import MealSearchComp from "../../components/mealSearch/MealSearchComp";
 import { useState } from "react";
-import { Wrapper, PurposeUL, PurposeLi, WrapperRight } from "./Home.styled";
+import { Wrapper, PurposeUL, PurposeLi, WrapperRight,Oops } from "./Home.styled";
 import chiefCoice from "../../assets/chiefChoice.png";
 import Cards from "../../components/cards/Cards";
 
@@ -56,10 +56,10 @@ const Home = () => {
         )}
 
         {recipes?.length === 0 && (
-          <div style={{textAlign:'center',gap:'1rem'}}>
+          <Oops >
             <h2 style={{marginBottom:'1rem'}}>OOOOPS! The recipe you requested was not found.</h2>
-            <img style={{width:'50%',borderRadius:'5%'}} src={chiefCoice} alt="" />
-          </div>
+            <img  src={chiefCoice} alt="" />
+          </Oops>
         )}
 
         {recipes?.length > 1 && <Cards recipes={recipes} />}
