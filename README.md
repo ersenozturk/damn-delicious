@@ -1,4 +1,4 @@
-<a href='https://damn-delicious-developed-ersen.netlify.app/' target='_blank'>PLEASE CLICK THIS</a>  
+<a href='https://damn-delicious-developed-ersen.netlify.app/' target='_blank'> PLEASE CLICK </a>  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
